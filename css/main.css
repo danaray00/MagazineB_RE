@@ -1,0 +1,24 @@
+.main_container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+    .main_banner_slide{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .main_ment_container{
+        position: relative;
+        width: 1920px;
+        height: 100%;
+        z-index: 10;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        
+    }

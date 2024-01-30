@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 10pt;
+    color: #222222;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+ul, ol, li {
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #222222;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
