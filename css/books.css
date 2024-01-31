@@ -3,6 +3,7 @@
     clear: both;
     width: 100%;
     height: 100vh;
+    background-color: #F2F2F2;
 }
     .books_all{
         width: 100%;
@@ -75,7 +76,6 @@
             .right_01, .right_02, .right_03{
                 width: 336px;
                 height: 100%;
-                
             }
 
             #right_img{
