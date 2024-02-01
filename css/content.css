@@ -1,0 +1,80 @@
+.content_container{
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+    .content{
+        position: relative;
+        clear: both;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+        #content_text{
+            position: relative;
+            clear: both;
+            width: 100%;
+            height: 35%;
+            padding-left: 10rem;
+            padding-top: 6.4rem;
+        }
+            #content_text_ment{
+                font-size: 6.4rem;
+                font-weight: 500;
+            }
+
+        #content_img{
+            position: relative;
+            clear: both;
+            width: 100%;
+            height: 63%;
+            display: flex;
+            flex-flow: column no-wrap;
+            overflow: hidden;
+        }
+            #content_img_wrap_01{
+                width: 50%;
+                height: 100%;
+                display: grid;
+                grid-template-areas:
+                "aa bb"
+                "aa cc";
+                grid-template-columns: 66.55% 33.55%;
+                grid-template-rows: 50% 50%;
+            }
+
+                #content_img_01{
+                    width: 100%;
+                    height: 100%;
+                    grid-area: aa;
+                }
+                #content_img_02{
+                    width: 100%;
+                    height: 50%;
+                    grid-area: bb;
+                    display: flex;
+                    flex-flow: column wrap;
+                }
+
+                #content_img_03{
+                    width: 100%;
+                    height: 50%;
+                    grid-area: cc;
+                    display: flex;
+                    flex-flow: column wrap;
+                }
+            
+            #content_img_wrap_02{
+                width: 50%;
+                height: 100%;
+                display: grid;
+                grid-template-areas:
+                "aa bb"
+                "aa cc";
+                grid-template-columns: 66.55% 33.55%;
+                grid-template-rows: 50% 50%;
+            }

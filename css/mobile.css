@@ -1,0 +1,144 @@
+@media all and (max-width:768px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        font-size: 10pt;
+        color: #333;
+        width: 420px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #color_white{
+        color: #fff;
+    }
+/*header&main-----------------------------------------*/
+.wrap{
+    width: 420px;
+}
+ /*header-----------------------------------------*/
+    .header_container{
+        width: 100%;
+    }
+        .header_all{
+            width: 420px;
+        }
+            #menu_item_wrap {
+                display: none;
+            }
+            .header_menu_01{
+                width: 10%;
+            }
+            .header_menu_02{
+                display: none;
+            }
+            .header_menu_03{
+                display: block;
+                width: 25%;
+                margin-left: 22rem;
+
+            }
+                .menu_03_wrap{
+                    display: flex;
+                    flex-flow: column no-wrap;
+                    width: 100%;
+                    justify-content: right;
+                    gap: 2rem;
+                    align-items: center;
+                }
+                    .menu_03_wrap > #color_white{
+                        font-size: 2.6rem;
+                    }
+ /*main-----------------------------------------*/
+
+.main_container{
+    width: 420px;
+} 
+    .main_banner_slide{
+        background-image: url(../img/Diseney_mo.png);
+    }
+    .main_ment_container{
+        padding-left: 3rem;
+        gap: 3rem;
+        justify-content: end;
+        padding-bottom: 3rem;
+
+    }
+    #main_ment{
+        display: flex;
+        height: 30%;
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    #ment_01{
+        display: flex;
+        flex-flow: column no-wrap;
+        gap: 1.5rem;
+        color: #fff;
+    }
+        #ment_01_01{
+            font-size: 1.4rem;
+        }
+        #ment_02{
+            font-size: 3.6rem;
+        }
+        #ment_03{
+            font-size: 1.4rem;
+        }
+        #main_pagenation{
+            font-size: 1.rem;
+        }
+
+/*shop-----------------------------------------*/
+.shop_container{
+    width: 420px;
+} 
+    .shop_all{
+        flex-flow: column wrap;
+        padding-top: 5rem;
+
+    }
+/*shop left*/
+.shop_left{
+    padding-left: 3rem;
+    width: 100%;
+    height: 10%;
+}
+    .left_wrap{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 3rem;
+        height: 100%;
+    }   
+        #left_link> a{
+            font-size: 1.4rem;
+            color: rgba(22, 22, 22, 50%);
+        }
+
+    #left_category_wrap{
+        display: flex;
+        flex-flow: column no-wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+/*shop right*/
+.shop_right{
+    padding-left: 3rem;
+    width: 100%;
+    height: 85%;
+    background-color: #333;
+}
+    .right_01{
+        width: 264px;
+        height: 100%;
+    }
+
+    .right_02, .right_03{
+        display: none;
+    }
+}   

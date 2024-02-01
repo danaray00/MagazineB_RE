@@ -9,6 +9,7 @@
     display: flex;
     margin: 0 auto;
     flex-flow: column wrap;
+
 }
     
 /*header-----------------------------------------*/
@@ -34,7 +35,6 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto;
-
         }
 
             .header_menu_01{
@@ -93,6 +93,10 @@
                 #selected{
                     border-bottom: 0.2rem solid #fff;
                 }
+            .header_menu_03{
+                display: none;
+            }
+
 
 
 
