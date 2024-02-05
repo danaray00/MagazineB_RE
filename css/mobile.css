@@ -102,8 +102,7 @@
 } 
     .shop_all{
         flex-flow: column wrap;
-        padding-top: 8rem;
-
+        padding-top: 7.5rem;
     }
 /*shop left*/
 .shop_left{
@@ -126,7 +125,7 @@
     #left_category_wrap{
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: center;
         gap: 1.5rem;
         width: 100%;
     }
@@ -148,11 +147,11 @@
 .shop_right{
     padding-left: 3rem;
     width: 100%;
-    height: 88%;
+    height: 90%;
     padding-right: 0rem;
     padding-top: 0rem;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 1.5rem;
 }
     .right_01, .right_02, .right_03{
         width: 85%;
@@ -167,9 +166,9 @@
     }
 
     #right_text_wrap{
-        width: 33rem;
+        width: 35rem;
         height: 30rem;
-        gap: 0.8rem;
+        gap: 0.4rem;
         text-align: center;
 
     }
@@ -230,4 +229,109 @@
                 font-size: 1.4rem;
             }
 
+/*books-----------------------*/
+
+.books_container{
+    width: 420px;
+    overflow: hidden;
+}
+    .books_all{
+        flex-flow: column wrap;
+        padding-top: 7.5rem;
+    }
+    /*shop left*/
+    .books_left{
+        padding-left: 1rem;
+        width: 100%;
+        height: 10%;
+    }
+
+    /*books right*/
+    .books_right{
+        padding-left: 3rem;
+        width: 100%;
+        height: 90%;
+        padding-right: 0rem;
+        padding-top: 0rem;
+        justify-content: space-between;
+        gap: 3rem;
+}
+
+/*contents-----------------------*/
+.content_container{
+width: 420px;
+height: auto;
+
+}
+    #content_text{
+    padding-left: 1rem;
+    padding-top: 7.5rem;
+
+    }
+        #content_text_ment{
+            font-size: 3.6rem;
+            font-weight: 500;
+        }
+        #content_img{
+            height: 63%;
+            flex-flow: column wrap;
+        }
+            #content_img_wrap_01{
+            width: 100%;
+            height: 50%;
+            }
+            #content_img_wrap_02{
+                width: 100%;
+                height: 50%;
+                }
+
+/*footer-----------------------*/
+.footer_container{
+    width: 420px;
+    height: auto;
+
+}
+    .footer_01{
+        padding: 7.5rem 0rem 0rem 1rem;
+    }
+        #footer_01_wrap{
+            flex-flow: column wrap;
+            gap: 5rem;
+        }
+            #footer_logo{
+                display: none;
+            }
+            #footer_text_box{
+                width: 100%;
+                height: auto;
+                gap: 1rem;
+            }
+                #text_bottom {
+                    gap: 0.5rem;
+                }
+    .footer_02{
+        display: none;
+    }
+    .footer_03{
+        position: relative;
+        clear: both;
+        width: 100%;
+        height: 10%;
+        margin-top: 5rem;
+        padding-left: 1rem;
+        display: flex;
+        flex-flow: column no-wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .footer_03> p{
+            font-size: 1.6rem;
+            color: #767676;
+        }
+        #footer_logo_02{
+            width: 43px;
+            height: auto;
+            position: relative;
+            margin-right: 1rem;
+        }
 }   
