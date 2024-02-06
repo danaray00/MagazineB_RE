@@ -1,0 +1,221 @@
+/*product_main------------------------------------*/
+.product_main_container{
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column no-wrap;
+    margin: 0 auto;
+    padding-top: 6.4rem;
+    justify-content: space-between;
+
+}
+    .product_main_left{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        #product_main_img{
+            width: 426px;
+            height: auto;
+        }
+
+    .product_main_right{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding-left: 5rem;
+    }
+    /*--1행------------------------------------*/
+        #product_ment_01{
+            position: relative;
+            clear: both;
+            display: flex;
+            flex-flow: column no-wrap;
+            gap: 2rem;
+        }
+            #ment_01_01{
+                font-size: 2.4rem;
+                font-weight: 500;
+            }
+    /*--2행------------------------------------*/
+    #product_ment_02{
+        position: relative;
+        clear: both;
+    }
+        #ment_02_01{
+            font-size: 8.4rem;
+            font-weight: 500;
+        }
+
+    /*--3행------------------------------------*/
+    #product_ment_03{
+        position: relative;
+        clear: both;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 0.5rem;
+    }
+        #ment_03_01{
+            text-decoration: line-through;
+            font-size: 2.4rem;
+            font-weight: 100;
+            color:#222;
+        }
+        #ment_03_02{
+            font-size: 2.4rem;
+            font-weight: 100;
+            font-weight: bold;
+        }
+        #red{
+            color: #ff0000;
+            font-size: 2rem;
+        }
+
+    /*--4행------------------------------------*/
+    #product_ment_04{
+        position: relative;
+        clear: both;
+        display: flex;
+        flex-flow: column no-wrap;
+        gap: 2rem;
+        margin-top: 6rem;
+    }
+        #ment_04_left{
+            display: flex;
+            flex-flow: column wrap;
+            border-right: 1px solid #222;
+            padding-right: 2rem;
+            
+        }
+            #ment_04_left_01{
+                font-size: 1.4rem ;
+            }
+            #grey{
+                font-size: 1.4rem ;
+                color: #999;
+            }
+
+        #ment_04_right_01{
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        #ment_04_right_01{
+            font-size: 1.4rem ;
+        }
+
+
+    /*--5행(구매)------------------------------------*/
+    #product_ment_05{
+        position: relative;
+        clear: both;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+        margin-top: 8rem;
+        padding-top: 2rem;
+        width: 70rem;
+        border-top: 1px solid #222;
+    }
+
+        #product_ment_05_01{
+            position: relative;
+            clear: both;
+            display: flex;
+            flex-flow: column no-wrap;
+            height: 5.4rem;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+            #ment_05_01_01{
+                width: 12%;
+                font-size: 2.4rem;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            #ment_05_01_02{
+                background-color: #222;
+                width: 85%;
+                height: 100%;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                cursor: pointer;
+            }
+                #ment_05_01_02 > a{
+                    font-size: 1.6rem;
+                    color: #fff;
+                    z-index: 99;
+                }
+
+        #product_ment_05_02{
+            position: relative;
+            clear: both;
+            display: flex;
+            flex-flow: column no-wrap;
+            height: 5.4rem;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        #ment_05_02_01{
+            background-color: #00DE5A;
+            width: 90%;
+            height: 100%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #ment_05_02_01 > a{
+            font-size: 1.6rem;
+            color: #222;
+            z-index: 99;
+        }
+
+        #ment_05_02_02{
+            background-color: #fff;
+            width: 8%;
+            height: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.6rem;
+            color: #222;
+        }
+/*product_sub------------------------------------*/
+.product_sub_container{
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+}
+
+/*product_rec------------------------------------*/
+.product_rec_container{
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 50vh;
+    background-color:turquoise;
+}
