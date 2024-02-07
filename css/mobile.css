@@ -334,4 +334,51 @@ height: auto;
             position: relative;
             margin-right: 1rem;
         }
+
+
+/*product 페이지-----------------------*/
+.product_main_container{
+    width: 420px;
+    height: auto;
+    flex-flow: column wrap;
+    padding-top: 0rem;
+    padding-top: 7.5rem;
+    margin: 0 auto;
+}
+
+    .product_main_left{
+        width: 100%;
+        height: 60%;
+    }
+        #product_main_img{
+            width: 100%;
+            height: auto;
+        }
+
+    .product_main_right{
+        width: 100%;
+        height: 40%;
+        flex-flow: column wrap;
+        padding-left: 1rem;
+    }
+
+    /*--1행------------------------------------*/
+    #product_ment_01{
+        display: flex;
+        flex-flow: column no-wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+        #ment_01_01{
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+    /*--2행------------------------------------*/
+    #product_ment_02{
+        text-align: center;
+    }
+        #ment_02_01{
+            font-size: 3.2rem;
+            font-weight: 500;
+        }
 }   
