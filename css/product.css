@@ -55,13 +55,14 @@
             font-weight: 500;
         }
 
+
     /*--3행------------------------------------*/
     #product_ment_03{
         position: relative;
         clear: both;
         display: flex;
         flex-flow: column wrap;
-        gap: 0.5re
+        gap: 0.5rem;
     }
         #ment_03_01{
             text-decoration: line-through;
@@ -70,10 +71,18 @@
             color:#222;
         }
         #ment_03_02{
-            font-size: 2.4rem;
-            font-weight: 100;
-            font-weight: bold;
+            position: relative;
+            display: flex;
+            align-items: center;
         }
+            #ment_03_02_00{
+                font-size: 2.4rem;
+                font-weight: 100;
+                font-weight: bold;
+            }
+            #ment_03_02_01{
+                display: none;
+            }
         #red{
             color: #ff0000;
             font-size: 2rem;
@@ -245,6 +254,7 @@
             flex-flow: column no-wrap;
             position: relative;
             align-items: center;
+            gap: 2rem;
         }
             #rec_img{
                 width: 24rem;
@@ -277,6 +287,7 @@
             flex-flow: column no-wrap;
             position: relative;
             align-items: center;
+            gap: 2rem;
         }
 
         #product_rec_03{
@@ -284,4 +295,5 @@
             flex-flow: column no-wrap;
             position: relative;
             align-items: center;
+            gap: 2rem;
         }

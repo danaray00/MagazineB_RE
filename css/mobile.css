@@ -4,13 +4,14 @@
         padding: 0px;
         
     }
-    
+    html{
+        width: 390px;
+        margin: 0 auto;
+    }
     body{
         font-size: 10px;
         color: #333;
-        width: 420px;
         height: 100vh;
-        margin: 0 auto;
     }
 
     #color_white{
@@ -18,14 +19,16 @@
     }
 /*header&main-----------------------------------------*/
 .wrap{
-    width: 420px;
+    width: 390px;
 }
  /*header-----------------------------------------*/
     .header_container{
-        width: 100%;
+        margin: 0 auto;
+        width: 390px;
+        position: relative;        
     }
         .header_all{
-            width: 420px;
+            width: 390px;
         }
             #menu_item_wrap {
                 display: none;
@@ -56,7 +59,7 @@
  /*main-----------------------------------------*/
 
 .main_container{
-    width: 420px;
+    width: 390px;
     
 } 
     .main_banner_slide{
@@ -97,7 +100,7 @@
 
 /*shop-----------------------------------------*/
 .shop_container{
-    width: 420px;
+    width: 390px;
     overflow: hidden;
 } 
     .shop_all{
@@ -189,7 +192,7 @@
         }
 /*banner*/
 .banner{
-    width: 420px;
+    width: 390px;
     height: 368px;
     flex-flow: column wrap;
 
@@ -232,7 +235,7 @@
 /*books-----------------------*/
 
 .books_container{
-    width: 420px;
+    width: 390px;
     overflow: hidden;
 }
     .books_all{
@@ -259,8 +262,8 @@
 
 /*contents-----------------------*/
 .content_container{
-width: 420px;
-height: auto;
+    width: 390px;
+    height: auto;
 
 }
     #content_text{
@@ -287,7 +290,7 @@ height: auto;
 
 /*footer-----------------------*/
 .footer_container{
-    width: 420px;
+    width: 390px;
     height: auto;
 
 }
@@ -338,11 +341,11 @@ height: auto;
 
 /*product 페이지-----------------------*/
 .product_main_container{
-    width: 420px;
+    width: 390px;
     height: auto;
     flex-flow: column wrap;
     padding-top: 0rem;
-    padding-top: 7.5rem;
+    padding-top: 1rem;
     margin: 0 auto;
 }
 
@@ -359,15 +362,17 @@ height: auto;
         width: 100%;
         height: 40%;
         flex-flow: column wrap;
-        padding-left: 1rem;
+        padding-left: 0rem;
     }
 
     /*--1행------------------------------------*/
     #product_ment_01{
+        width: 100%;
         display: flex;
         flex-flow: column no-wrap;
         gap: 2rem;
         justify-content: center;
+        padding-top: 1.5rem;
     }
         #ment_01_01{
             font-size: 1.6rem;
@@ -376,9 +381,127 @@ height: auto;
     /*--2행------------------------------------*/
     #product_ment_02{
         text-align: center;
+        width: 100%;
     }
         #ment_02_01{
-            font-size: 3.2rem;
+            font-size: 3.4rem;
             font-weight: 500;
         }
+
+    #product_ment_03{
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 3rem;
+    }
+        #ment_03_01{
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        #ment_03_02{
+
+            display: flex;
+            flex-flow: column no-wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+            #ment_03_02_00{
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+
+            #ment_03_02_01{
+                display: block;
+                font-size: 2.4rem;
+                font-weight: 500;
+                text-align: right;
+            }
+            #red{
+                font-size: 1.6rem;
+            }
+/*--4행------------------------------------*/
+    #product_ment_04{
+        display: none;
+    }
+
+/*--5행(구매)------------------------------------*/
+    #product_ment_05{
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 2rem;
+        padding-top: 1rem;
+    }
+       #product_ment_05_01{
+            height: 5.2rem;
+       }
+            #ment_05_01_01{
+                display: none;
+            }
+            #ment_05_01_02{
+                width: 100%;
+            }
+        #product_ment_05_02{
+            height: 5.2rem;
+            gap: 0.5rem;
+        }
+            #ment_05_02_01{
+                width: 88%;
+            }
+            #ment_05_02_02{
+                width: 12%;
+            }
+/*product_sub------------------------------------*/
+.product_sub_container{
+    width: 100%;
+    padding-top: 1rem;
+}
+
+/*product_rec------------------------------------*/
+.product_rec_container{
+    width: 390px;
+    height: auto;
+    padding-left: 0rem;
+    gap: 1rem;
+    overflow:hidden;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+    #product_rec_ment{
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 1.6rem;
+    }
+    #product_rec{
+        gap: 0rem;   
+    }
+    #product_rec_01, #product_rec_02, #product_rec_03{
+        flex-flow: column wrap;
+        position: relative;
+        align-items: center;
+        gap: 0rem;
+
+    }
+        #rec_img{
+            width: 13rem;
+        }
+        #rec_text{
+            gap: 0.2rem;
+            align-items: center;
+        }
+
+            #rec_text_01{
+                font-size: 1.3rem;
+            }
+            #red_02{
+                color: #ff0000;
+                font-size: 1.3rem;
+            }
+            #line{
+                text-decoration: line-through;
+                font-size: 1.3rem;
+            }
+            #bold{
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
 }   
