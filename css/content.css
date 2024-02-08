@@ -45,12 +45,53 @@
                 display: flex;
                 flex-flow: column no-wrap;
             }
-
+            /*좌측 이미지------------------------------------*/
+            /*좌측 큰 이미지----------------------------------*/
                 #content_img_01{
                     width: 67.25%;
                     height: 100%;
+                    overflow: hidden;
+                    cursor: pointer;
                 }
 
+                    #content_hover{
+                        position: absolute;
+                        width: 67.25%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        background-color:rgba(22, 22, 22, 0.8);
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+                        padding: 3rem;
+                        gap: 2rem;
+                        opacity: 0;
+                        transition: all 300ms;
+                        transform: translate(-20px);
+                    }
+                    #content_hover:hover{
+                        opacity: 1;
+                        transform: translateY(0px);
+                    }
+
+                        #title{
+                            position: relative;
+                            clear: both;
+                            font-size: 1.4rem;
+                            color: #fff;
+                        }
+                        #main{
+                            font-size: 3.4rem;
+                            color: #fff;
+                        }
+                        #sub{
+                            position: relative;
+                            clear: both;
+                            font-size: 1.4rem;
+                            color: #fff;
+                        }
+                /*좌측 작은 이미지(1)----------------*/
                 #content_img_02{
                     width: 32.75%;
                     height: 100%;
@@ -65,7 +106,50 @@
                         background-image: url(../img/content_14.JPG);
                         background-repeat: no-repeat;
                         background-size: cover;
+                        cursor: pointer;
                     }
+
+                        #content_hover_02{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            background-color:rgba(22, 22, 22, 0.8);
+                            display: flex;
+                            flex-flow: column wrap;
+                            justify-content: center;
+                            padding: 3rem;
+                            gap: 2rem;
+                            opacity: 0;
+                            transition: all 300ms;
+                            transform: translate(-20px);
+                        }
+                        #content_hover_02:hover{
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+
+                        #title_02{
+                            position: relative;
+                            clear: both;
+                            font-size: 1.2rem;
+                            color: #fff;
+                        }
+                        #main_02{
+                            font-size: 1.6rem;
+                            color: #fff;
+
+                        }
+                        #sub_02{
+                            position: relative;
+                            clear: both;
+                            font-size: 1.2rem;
+                            color: #fff;
+
+                        }
+ 
+                /*좌측 작은 이미지(2)-----------------------------*/
                     #content_img_02_02{
                         width: 100%;
                         height: 50%;
@@ -74,6 +158,7 @@
                         background-image: url(../img/content_09.png);
                         background-repeat: no-repeat;
                         background-size: cover;
+                        cursor: pointer;
                     }
 
             #content_img_wrap_02{

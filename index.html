@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magazine_B</title>
 
-    <link href="./css/style.css" type="text/css" rel="stylesheet">
-    <link href="./css/header.css" type="text/css" rel="stylesheet">
-    <link href="./css/main.css" type="text/css" rel="stylesheet">
-    <link href="./css/shop.css" type="text/css" rel="stylesheet">
-    <link href="./css/banner.css" type="text/css" rel="stylesheet">
-    <link href="./css/books.css" type="text/css" rel="stylesheet">
-    <link href="./css/content.css" type="text/css" rel="stylesheet">
-    <link href="./css/footer.css" type="text/css" rel="stylesheet">
-    <link href="./css/mobile.css" type="text/css" rel="stylesheet">
-
-
     <!--폰트-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +18,29 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://danaray00.github.io/justone/index.html"/>
     <meta property="og:image" content="https://danaray00.github.io/justone/img/section_row_04_img_01.jpg"/>
+
+    <!--CSS-------------->
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link href="./css/header.css" type="text/css" rel="stylesheet">
+    <link href="./css/main.css" type="text/css" rel="stylesheet">
+    <link href="./css/shop.css" type="text/css" rel="stylesheet">
+    <link href="./css/banner.css" type="text/css" rel="stylesheet">
+    <link href="./css/books.css" type="text/css" rel="stylesheet">
+    <link href="./css/content.css" type="text/css" rel="stylesheet">
+    <link href="./css/footer.css" type="text/css" rel="stylesheet">
+    <link href="./css/mobile.css" type="text/css" rel="stylesheet">
+
+
+    <!--자바스크립트-------------->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-animate-css-rotate-scale-master/jquery-animate-css-rotate-scale.js"></script>
+    <script src="./js/jquery-mousewheel-3.1.13/jquery.mousewheel.js"></script>
+    <script src="./js/jquery-mousewheel-3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="./js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+    <script src="./js/main_banner.js" defer></script>
 
 </head>
 <body>
@@ -56,7 +68,7 @@
                         <a href="#"> Books </a>
                     </div>
                     <div id="menu_item">
-                        <a href="#"> Goods & Tickets </a>
+                        <a href="#"> Goods&Tickets </a>
                     </div>
                     <div id="menu_item">
                         <a href="#"> Newsletter </a>
@@ -101,7 +113,13 @@
 <!--main----------------------------------------------------->
 
     <section class="main_container">
-        <div class="main_banner_slide"> </div>
+        <div class="main_banner_slide">
+            <div class="main_banner_img_all">
+                <div id="main_banner_01"></div>
+                <div id="main_banner_02"></div>
+                <div id="main_banner_03"></div>
+            </div>
+        </div>
         <div class="main_ment_container">
             <div id="main_ment">
                 <div id="ment_01"> 
@@ -115,7 +133,13 @@
                     SHOP NOW
                 </div>
             </div>
-            <div id="main_pagenation"> 페이지네이션 위치</div>
+            <div id="main_pagenation">
+                <div id="page_top">
+                    <div id="page_left">1</div>
+                    <div id="page_right">3</div>
+                </div>
+                <div id="page_bottom">막대기</div>
+            </div>
         </div>
     </section>
 </div>
@@ -354,22 +378,86 @@
         </div>
         <div id="content_img">
             <div id="content_img_wrap_01">
+                <!--좌측 큰 이미지----------------------->
                 <div id="content_img_01">
                     <img src="./img/content_12.JPG" alt="640X640">
+                    <div id="content_hover">
+                        <span id="title"> ● NEWSLETTER</span>
+                        <span id="main">
+                            Seoul, a city constantly transforming<br>
+                            between the past and the future
+                        </span>
+                        <span id="sub"> 서울, 과거와 미래 사이에서 변신을 거듭하는 도시</span>
+                    </div>
                 </div>
+                <!--좌측 이미지 Wrap----------------------->
                 <div id="content_img_02">
-                    <div id="content_img_02_01"><img src="./img/content_14.JPG" alt="320X320"></div>
-                    <div id="content_img_02_02"><img src="./img/content_09.png" alt="320X320"></div>
+                    <!--좌측 작은 이미지(1)----------------------->
+                    <div id="content_img_02_01">
+                        <img src="./img/content_14.JPG" alt="320X320">
+                        <div id="content_hover_02">
+                            <span id="title_02"> ● NEWSLETTER</span>
+                            <span id="main_02">
+                                Explore the brand’s route
+                            </span>
+                            <span id="sub_02"> 7월의 뉴스 - 이라선, 더 콘란샵, 에메 레온 도르</span>
+                        </div>
+                    </div>
+                    <!--좌측 작은 이미지(2)----------------------->
+                    <div id="content_img_02_02">
+                        <img src="./img/content_09.png" alt="320X320">
+                        <div id="content_hover_02">
+                            <span id="title_02"> ● NEWSLETTER</span>
+                            <span id="main_02">
+                                Explore the brand’s route
+                            </span>
+                            <span id="sub_02">10월의 뉴스 - 무인양품, 블루보틀 커피, 혼다</span>
+                        </div>
+                    </div>
                 </div>
+        
             </div>
 
             <div id="content_img_wrap_02">
+                <!--우측 큰 이미지----------------------->
                 <div id="content_img_01">
-                   <img src="./img/content_13.png" alt="640X640">
+                    <img src="./img/content_13.png" alt="640X640">
+                    <div id="content_hover">
+                        <span id="title"> ● NEWSLETTER</span>
+                        <span id="main">
+                            An encouragement for those <br>
+                            setting out to find their path
+                        </span>
+                        <span id="sub"> 자기만의 방향을 찾아 나선 이들에게 보내는 응원<br>
+                            매거진 B 한남 X 오어즈
+                        </span>
+                    </div>
                 </div>
+                <!--우측 이미지 Wrap----------------------->
                 <div id="content_img_02">
-                    <div id="content_img_02_03"><img src="./img/content_10.jpg" alt="320X320"></div>
-                    <div id="content_img_02_04"><img src="./img/content_08.JPG" alt="320X320"></div>
+                    <!--우측 작은 이미지(1)----------------------->
+                    <div id="content_img_02_01">
+                        <img src="./img/content_10.jpg" alt="320X320">
+                        <div id="content_hover_02">
+                            <span id="title_02"> ● NEWSLETTER</span>
+                            <span id="main_02">
+                                A Skincare Journey to <br> Discovering Self with Aesop
+                            </span>
+                            <span id="sub_02"> 일상성으로의 초대 - 이솝과 함께하는 스킨 케어 여정 </span>
+                        </div>
+                    </div>
+                    <!--좌측 작은 이미지(2)----------------------->
+                    <div id="content_img_02_02">
+                        <img src="./img/content_08.JPG" alt="320X320">
+                        <div id="content_hover_02">
+                            <span id="title_02"> ● NEWSLETTER</span>
+                            <span id="main_02">
+                                Spice up Your Magazine B <br>
+                                Reading with B CAST
+                            </span>
+                            <span id="sub_02">B를 입체적으로 즐기는 또 하나의 방법, B CAST</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -11,14 +11,50 @@
     .main_banner_slide{
         position:relative;
         z-index: 1;
-        width: 100%;
+        width: 5760px;
         height: 100%;
-        background-image: url(../img/Diseney.png);
-        background-repeat: no-repeat;
-        background-size: cover;
         margin: 0 auto;
-
+        overflow: hidden;
     }
+        .main_banner_img_all{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5760px;
+            height: 100vh;
+        }
+        .main_banner_img_all > li{
+            float:left;
+            list-style:none;
+        }
+
+            #main_banner_01{
+                position: relative;
+                float: left;
+                width: 1920px;
+                height: 100%;
+                background-image: url(../img/Diseney.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #main_banner_02{
+                position: relative;
+                float: left;
+                width: 1920px;
+                height: 100%;
+                background-image: url(../img/WineBanner.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #main_banner_03{
+                position: relative;
+                float: left;
+                width: 1920px;
+                height: 100%;
+                background-image: url(../img/B-CAST.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
     .main_ment_container{
         position: absolute;
         left: 0px;
