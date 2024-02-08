@@ -54,7 +54,7 @@
                 #left_category:hover{
                     font-size: 5.4rem;
                     color: #222;
-                    border-bottom: 0.3rem solid #222;
+                    border-bottom: 0.5rem solid #222;
                 }
 
         .shop_right{
@@ -88,16 +88,16 @@
                 height: 25.2rem;
             }
 
-
             #right_text_wrap{
                 padding-top: 2rem;
                 position: relative;
                 clear: both;
                 width: 33.6rem;
-                height: 30rem;
+                height: 60rem;
                 display: flex;
                 flex-flow: column wrap;
                 gap: 1rem;
+
             }
                 #right_text_01{
                     position: relative;
@@ -120,6 +120,7 @@
                 #right_text_03{
                     position: relative;
                     clear: both;
-                    gap: 4rem;
+                    line-height: 2.5rem;
                     font-size: 1.6rem;
+                    word-break: keep-all;
                 }
