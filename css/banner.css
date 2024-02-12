@@ -22,8 +22,9 @@
         position: relative;
         width: 41.7%;
         height: 100%;
-        padding-top:5%;
-        padding-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
         #banner_text_wrap{
             display: flex;
