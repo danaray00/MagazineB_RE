@@ -41,6 +41,11 @@
     <script src="./js/jquery-ui.min.js"></script>
 
     <script src="./js/main_banner.js" defer></script>
+    <script src="./js/category.js" defer></script>
+    <script src="./js/category_02.js" defer></script>
+
+
+
 
 </head>
 <body>
@@ -197,28 +202,30 @@
             <div class="shop_left">
                 <div class="left_wrap">
                     <div id="left_link">
-                        <a href="#">Shop→</a></div>
+                        <a href="#">Shop→</a>
+                    </div>
                     <div id="left_category_wrap">
-                        <div id="left_category" selected>
+                        <div class="left_category active" data-contents="category1">
                             Magazine B,
                         </div>
-                        <div id="left_category">
+                        <div class="left_category" data-contents="category2">
                             Magazine F,
                         </div>
-                        <div id="left_category">
+                        <div class="left_category" data-contents="category3">
                             Fashion,
                         </div>
-                        <div id="left_category">
+                        <div class="left_category" data-contents="category4">
                             Hospitality
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="shop_right">
+            <!--카테고리 매거진 B----------------------------------------------------->
+            <div class="shop_right" id="category1">
                 <div class="right_01">
                     <div id="right_img">
                         <a href="./product.html" target="_blank">
-                            <img src="./img/shop_01.jpg" alt="336 X 448">
+                            <img src="./img/shop_01_01.jpg" alt="336 X 448">
                         </a>
                     </div>
                     <div id="right_text_wrap">
@@ -241,7 +248,7 @@
                 </div> 
                 <div class="right_02">
                     <div id="right_img_02">
-                        <img src="./img/shop_02.png" alt="336 X 448">
+                        <img src="./img/shop_01_02.png" alt="336 X 448">
                     </div>
                     <div id="right_text_wrap">
                             <div id="right_text_01"> 
@@ -266,7 +273,7 @@
                 </div>
                 <div class="right_03">
                     <div id="right_img">
-                        <img src="./img/shop_03.png" alt="336 X 448">
+                        <img src="./img/shop_01_03.png" alt="336 X 448">
                     </div>
                     <div id="right_text_wrap">
                             <div id="right_text_01"> 
@@ -289,6 +296,217 @@
 
                 </div>
             </div>
+            <!--카테고리 매거진 F----------------------------------------------------->
+            <div class="shop_right" id="category2" style="display:none">
+                <div class="right_01">
+                    <div id="right_img_02">
+                        <img src="./img/shop_02_01.png" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">MAGAZINE F</div>
+                                <div id="right_text_01_01">ISSUE NO.11</div>
+                            </div>
+                            <div id="right_text_02">
+                                BEAN
+                            </div>
+                            <div id="right_text_03">
+                                콩은 농작물 중에서 가장 많은 단백질을 함유하고 있어
+                                ‘슈퍼푸드’ 목록에 빠짐없이 등장하는 식재료 중 하나로 꼽힙니다.
+                                영양학적으로 완벽한 성질을 지닌 동시에 생산적 효율도 뛰어나
+                                오랜 세월에 걸쳐 다양한 방식으로 활용, 파생되며 
+                                대중 식문화에 기여했습니다.
+                                특히 콩의 발상지로 꼽히는 중국과 한국에서는...
+                            </div>
+                    </div>
+                </div> 
+                <div class="right_02">
+                    <div id="right_img">
+                        <img src="./img/shop_02_02.jpg" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">MAGAZINE F</div>
+                                <div id="right_text_01_01">ISSUE NO.21</div>
+                            </div>
+                            <div id="right_text_02">
+                                RAMYUN
+                            </div>
+                            <div id="right_text_03">
+                                넓은 의미로는 국물에 면을 넣어 먹는 형태의 음식을,
+                                한국에서는 봉지 라면이나 컵라면 등의 인스턴트 식품 형태를
+                                라면이라 일컬을 만큼 라면은 아시아 지역을 중심으로 식문화의
+                                다채로움을 보여주는 바로미터 역할을 합니다. 특히 인스턴트
+                                라면의 경우 물과 라면, 불만으로 누구나 쉽게 조리 과정을
+                                통제해 동일한 맛의 라면을 맛볼 수 있다는 점에서...
+                            </div>
+                    </div>
+
+                </div>
+                <div class="right_03">
+                    <div id="right_img">
+                        <img src="./img/shop_02_03.png" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">MAGAGINE F</div>
+                                <div id="right_text_01_01">ISSUE NO.23</div>
+                            </div>
+                            <div id="right_text_02">
+                                MUSHROOM
+                            </div>
+                            <div id="right_text_03">
+                                종류에 따라 각양각색의 모양을 한 버섯은 동물에도, 식물에도
+                                속하지 않는 균류의 일종으로 자실체와 균사체로 구분됩니다.
+                                영양분을 빨아들이는 균사체는 솜털이나 실오라기와 같은 형태로
+                                주로 나무뿌리 등에 붙어 있으며, 포자를 만들어 자손을 퍼뜨리기
+                                위해 피어난 번식기관, 곧 자실체가 바로 우리가 식용으로
+                                활용하는 버섯에 해당합니다.
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--카테고리 Fashion----------------------------------------------------->
+            <div class="shop_right" id="category3" style="display:none">
+                <div class="right_01">
+                    <div id="right_img_02">
+                            <img src="./img/shop_03_01.png" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">FASHION</div>
+                                <div id="right_text_01_01">ISSUE NO.24</div>
+                            </div>
+                            <div id="right_text_02">
+                                REPETTO
+                            </div>
+                            <div id="right_text_03">
+                                프랑스 플랫 슈즈 브랜드 레페토는 1947년 로즈 레페토가
+                                뛰어난 발레리노이던 아들 롤랑 프티의 조언으로 토슈즈를 
+                                만들며 탄생했습니다. 특유의 제작 방식은 이후 그 효용성을 
+                                레페토의 일상화 라인에 담아내는 초석이 되었습니다. 
+                                1980년대 중반, 창업자의 죽음은 브랜드의 침체기를 가져왔지만, 
+                                새로운 CEO 장마르크 고셰는...
+                            </div>
+                    </div>
+                </div> 
+                <div class="right_02">
+                    <div id="right_img">
+                        <img src="./img/shop_03_02.jpg" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">FASHION</div>
+                                <div id="right_text_01_01">ISSUE NO.69</div>
+                            </div>
+                            <div id="right_text_02">
+                                MAISON KITSUNE
+                            </div>
+                            <div id="right_text_03">
+                                2002년 프랑스 파리에서 시작한 메종 키츠네는 
+                                날 선 취향으로 새로운 뮤지션을 발굴해온 음악 레이블에서 
+                                프레피 룩의 감성을 절묘하게 이식한 패션 하우스, 브랜드의 바이브를 담은 카페로 
+                                차근차근 브랜드의 레퍼토리를 넓혀왔습니다. 글로벌 팬덤을 거느린 
+                                브랜드로 성장한 이후에도 '여우'라는 뜻의 브랜드 이름...
+                            </div>
+                    </div>
+
+                </div>
+                <div class="right_03">
+                    <div id="right_img_02">
+                        <img src="./img/shop_03_03.png" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">FASHION</div>
+                                <div id="right_text_01_01">ISSUE NO.73</div>
+                            </div>
+                            <div id="right_text_02">
+                                CHANEL
+                            </div>
+                            <div id="right_text_03">
+                                샤넬은 가브리엘 샤넬이 20세기 초 프랑스에 세운 세계적 
+                                럭셔리 기업으로, 파리 깡봉가 31번지라는 상징적 장소를 
+                                포함해 전 세계 190여 개에 달하는 패션 부티크를 두고 
+                                레디투웨어와 핸드백, 액세서리, 아이웨어부터 향수와 코스메틱, 
+                                화인 주얼리, 워치까지 다양한 범주의 제품을 선보입니다. 
+                                또한 파리에서 선보이는 오트 쿠튀르 컬렉션으로...
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--카테고리 Hospitality----------------------------------------------------->
+            <div class="shop_right" id="category4" style="display:none">
+                <div class="right_01">
+                    <div id="right_img">
+                            <img src="./img/shop_04_01.jpg" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">HOSPITALITY</div>
+                                <div id="right_text_01_01">ISSUE NO.74</div>
+                            </div>
+                            <div id="right_text_02">
+                                BANGKOK
+                            </div>
+                            <div id="right_text_03">
+                                태국 중앙에 위치한 도시 방콕은 1782년 국왕 라마 1세가 
+                                수도로 세운 이래 태국의 정치·경제·문화의 중심으로 자리해왔습니다. 
+                                불교 중심의 왕실 문화를 유지하면서도 특유의 개방적 태도로 
+                                중국과 베트남, 말레이시아 등지에서 넘어온 이주민 문화를
+                                 내재화하며 새롭게 변주하는 능력이 탁월한 도시입니다.
+                            </div>
+                    </div>
+                </div> 
+                <div class="right_02">
+                    <div id="right_img">
+                        <img src="./img/shop_04_02.jpg" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">HOSPITALITY</div>
+                                <div id="right_text_01_01">ISSUE NO.81</div>
+                            </div>
+                            <div id="right_text_02">
+                                SOHO HOUSE
+                            </div>
+                            <div id="right_text_03">
+                                소호 하우스는 권력과 부를 중심으로 모인 남성 위주의
+                                멤버십 클럽과 달리 영화나 음악 산업 등에 종사하는
+                                창의적인 사람들을 대상으로 1995년 런던에서 닉 존스가 
+                                설립한 진취적 성격의 멤버십 클럽입니다. 창립자 닉 존스는 
+                                ‘마치 내 집처럼 편안한 곳’에서 비슷한 취향을 지닌 사람들과...
+                            </div>
+                    </div>
+
+                </div>
+                <div class="right_03">
+                    <div id="right_img">
+                        <img src="./img/shop_04_03.jpg" alt="336 X 448">
+                    </div>
+                    <div id="right_text_wrap">
+                            <div id="right_text_01"> 
+                                <div id="right_text_01_01">HOSPITALITY</div>
+                                <div id="right_text_01_01">ISSUE NO.88</div>
+                            </div>
+                            <div id="right_text_02">
+                                COPENHAGEN
+                            </div>
+                            <div id="right_text_03">
+                                덴마크의 수도 코펜하겐에는 경쟁보다 서로 돕고
+                                함께 일하는 공동체적 분위기가 도시 저변에 깔려있고,
+                                 이러한 배경은 코펜하겐 시민으로 하여금 자유롭게 의견을 
+                                 개진하는 창의적 환경을 조성하도록 이끌었습니다. 1950년대
+                                 이후 코펜하겐은 '대니시 모던 디자인'의 중심지로서 기능성과 
+                                 장인 정신을 바탕으로...
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -327,24 +545,26 @@
         <div class="books_left">
             <div class="left_wrap">
                 <div id="left_link">
-                    <a href="#">Books →</a></div>
-                <div id="left_category_wrap">
-                    <div id="left_category" selected>
+                    <a href="#">Books→</a>
+                </div>
+                <div id="left_category_wrap_02">
+                    <div class="left_category_02 active" data-contents="category5">
                         Jobs,
                     </div>
-                    <div id="left_category">
+                    <div class="left_category_02" data-contents="category6">
                         The Series,
                     </div>
-                    <div id="left_category">
+                    <div class="left_category_02" data-contents="category7">
                         Others
                     </div>
                 </div>
             </div>
         </div>
-        <div class="books_right">
-            <div class="right_01">
+        <!--Jobs----------------------------------------------------->
+        <div class="books_right" id="category5" >
+            <div class="right_01"  >
                 <div id="right_img">
-                    <img src="./img/books_01.jpg" alt="336 X 448">
+                    <img src="./img/books_01_01.jpg" alt="336 X 448">
                 </div>
                 <div id="right_text_wrap">
                         <div id="right_text_01"> 
@@ -366,7 +586,7 @@
             </div> 
             <div class="right_02">
                 <div id="right_img">
-                    <img src="./img/books_02.jpg" alt="336 X 448">
+                    <img src="./img/books_01_02.jpg" alt="336 X 448">
                 </div>
                 <div id="right_text_wrap">
                         <div id="right_text_01"> 
@@ -390,7 +610,7 @@
             </div>
             <div class="right_03">
                 <div id="right_img">
-                    <img src="./img/books_03.jpg" alt="336 X 448">
+                    <img src="./img/books_01_03.jpg" alt="336 X 448">
                 </div>
                 <div id="right_text_wrap"> 
                         <div id="right_text_01"> 
@@ -412,6 +632,142 @@
 
             </div>
         </div>
+
+        <!--The Series----------------------------------------------------->
+        <div class="books_right" id="category6" style="display:none">
+            <div class="right_01" >
+                <div id="right_img">
+                    <img src="./img/books_02_01.jpg" alt="336 X 448">
+                </div>
+                <div id="right_text_wrap">
+                        <div id="right_text_01"> 
+                            <div id="right_text_01_01">THE SERIES</div>
+                        </div>
+                        <div id="right_text_02">
+                            THE SHOP
+                        </div>
+                        <div id="right_text_03">
+                            'THE SHOP(더 숍)'은 서울과 도쿄, 런던과 LA 등의 도시에서
+                             각자 다른 창의적인 방식으로, 사람들에게 발견과 경험의 
+                             재미를 주는 여러 숍을 소개합니다. 물건을 판매하는 매장이면서
+                              레스토랑, 전시장을 겸하는 하이브리드 형태의 숍, 
+                              건강하고 행복한 삶에 대한 가치와 메시지를 전달하는 숍,
+                               오너 개인의 취향과 기호로 자신의 은밀한 공간을 공개하는...
+                        </div>
+                </div>
+            </div> 
+            <div class="right_02">
+                <div id="right_img">
+                    <img src="./img/books_02_02.jpg" alt="336 X 448">
+                </div>
+                <div id="right_text_wrap">
+                        <div id="right_text_01"> 
+                            <div id="right_text_01_01">THE SERIES</div>
+                        </div>
+                        <div id="right_text_02">
+                            THE NEIGHBORHOOD
+                        </div>
+                        <div id="right_text_03">
+                            “어떤 동네에서 살고 싶은가요?” '더 네이버후드'는 
+                            '더홈' '더숍'에 이어 삶의 지향점으로서의 동네에 대해
+                             다루는 책입니다. 현대사회에서 동네란 또 다른 ‘집’으로 기능하며,
+                              우리는 끊임없이 이상향의 동네를 그려보곤 합니다.
+                               베를린의 쾨르네르키츠, 파리의 샤론, 서울의 서촌...
+                        </div>
+                </div>
+
+            </div>
+            <div class="right_03">
+                <div id="right_img">
+                    <img src="./img/books_02_03.jpg" alt="336 X 448">
+                </div>
+                <div id="right_text_wrap"> 
+                        <div id="right_text_01"> 
+                            <div id="right_text_01_01">THE SERIES</div>
+                        </div>
+                        <div id="right_text_02">
+                            THE HOME
+                        </div>
+                        <div id="right_text_03">
+                            'THE HOME(더 홈)’은 집과 사람에 대한 이야기를 다룬 책입니다. 
+                            ‘더 홈'에서 다루는 집은 형태나 규모, 스타일보다 집에 머무는 
+                            이가 집이라는 공간을 어떻게 대하고 있는지, 그 태도가 분명한 
+                            집에 주목합니다. 그리고 그 태도에 따라 비슷한 유형의 집을 묶었습니다.
+                             집에서 주거와 일을 병행하는 사람들은 ‘Home Office’...
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Others----------------------------------------------------->
+        <div class="books_right" id="category7" style="display:none">
+            <div class="right_01" >
+                <div id="right_img">
+                    <img src="./img/books_03_01.jpg" alt="336 X 448">
+                </div>
+                <div id="right_text_wrap">
+                        <div id="right_text_01"> 
+                            <div id="right_text_01_01">OTHERS</div>
+                        </div>
+                        <div id="right_text_02">
+                            FOUND:
+                        </div>
+                        <div id="right_text_03">
+                            FOUND:는 매거진 F 편집부가 2년 반 동안 
+                            세계 곳곳의 지역을 누비며 수집한 식문화 정보를 
+                            가이드 형태로 구성해 엮은 출판물입니다. 매거진 F가
+                            소금이나 치즈, 식초 등의 식재료를 중심으로 인류 역사,
+                            특정 환경으로부터 비롯한 지역 고유의 식문화, 그 땅에서
+                            성장한 여러 셰프와 푸드 관련 브랜드...
+                        </div>
+                </div>
+            </div> 
+            <div class="right_02">
+                <div id="right_img">
+                    <img src="./img/books_03_02.jpg" alt="336 X 448">
+                </div>
+                <div id="right_text_wrap">
+                        <div id="right_text_01"> 
+                            <div id="right_text_01_01">OTHERS</div>
+                        </div>
+                        <div id="right_text_02">
+                            ART BOOK
+                        </div>
+                        <div id="right_text_03">
+                            아트북은 2018년 3월 처음 선보인 '소금' 편부터 
+                            '쌀' 편까지 다섯 가지 식재료의 이야기를 양장본 형태로 엮은 
+                            책으로, 매거진 F가 그간 발견하고 포착한 자연과 사람의 교감이
+                            파노라마처럼 펼쳐집니다. 배달의민족 김봉진 대표와 매거진
+                            B의 조수용 발행인이 지금까지 매거진 F를 펴내며 나누었던 
+                            이야기로부터 의 여정을 시작합니다.
+                        </div>
+                </div>
+
+            </div>
+            <div class="right_03">
+                <div id="right_img">
+                    <img src="./img/books_03_03.jpg" alt="336 X 448">
+                </div>
+                <div id="right_text_wrap"> 
+                        <div id="right_text_01"> 
+                            <div id="right_text_01_01">OTHERS</div>
+                        </div>
+                        <div id="right_text_02">
+                            DOCUMENTED
+                        </div>
+                        <div id="right_text_03">
+                            프라이탁부터 아크테릭스까지, 매거진 B는 브랜드를 향한 
+                            관찰과 그에 대한 기록을 반복하며 10년의 여정을 이어왔습니다.
+                            패션과 테크, 도구와 서비스, 콘텐츠와 공간 등 다양한 영역을
+                            넘나들며 만난 브랜드는 곧 창립자의 아이디어이자 브랜드를 만드는 
+                            사람이면서 사용자의 일부인 동시에 경험 그 자체이기도 합니다.                                 
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </section>
 <!--content-------------------------------------------------------------------->

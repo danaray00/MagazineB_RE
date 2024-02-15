@@ -33,14 +33,13 @@
                 color: rgba(22, 22, 22, 50%);
             }
 
-            #left_category_wrap{
+            #left_category_wrap_02{
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
                 gap: 2rem;
-
             }
-                #left_category{
+                .left_category_02{
                     font-size: 5.4rem;
                     height: 8rem;
                     color: #767676;
@@ -48,16 +47,16 @@
                     cursor: pointer;
                 }
 
-                #left_category #selected{
+                .left_category_02.active{
                     font-size: 5.4rem;
                     color: #222;
                     border-bottom: 0.5rem solid #222;
                 }
 
-                #left_category:hover{
+                .left_category_02:hover{
                     font-size: 5.4rem;
                     color: #222;
-                    border-bottom: 0.3rem solid #222;
+                    border-bottom: 0.5rem solid #222;
                 }
 
         .books_right{

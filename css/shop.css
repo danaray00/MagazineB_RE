@@ -37,7 +37,7 @@
                 justify-content: center;
                 gap: 2rem;
             }
-                #left_category{
+                .left_category{
                     font-size: 5.4rem;
                     height: 8rem;
                     color: #767676;
@@ -45,13 +45,13 @@
                     cursor: pointer;
                 }
 
-                #left_category #selected{
+                .left_category.active{
                     font-size: 5.4rem;
                     color: #222;
                     border-bottom: 0.5rem solid #222;
                 }
 
-                #left_category:hover{
+                .left_category:hover{
                     font-size: 5.4rem;
                     color: #222;
                     border-bottom: 0.5rem solid #222;
@@ -68,11 +68,14 @@
             align-items: center;
             justify-content: right;
             gap: 3rem;
+
         }
             .right_01, .right_02, .right_03{
                 width: 336px;
                 height: 100%;
+                margin: 0 auto;
             }
+
 
             #right_img{
                 position: relative;
