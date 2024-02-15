@@ -50,7 +50,6 @@
                 height: 100%;
                 display: flex;
                 flex-flow: column no-wrap;
-                background-color: yellowgreen;
             }
 
             #content_img_wrap_02{
@@ -60,7 +59,6 @@
                 height: 100%;
                 display: flex;
                 flex-flow: column no-wrap;
-                background-color: yellowgreen;
             }
 
             /*좌측 이미지------------------------------------*/
