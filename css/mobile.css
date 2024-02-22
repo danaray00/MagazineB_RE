@@ -62,9 +62,51 @@
     width: 390px;
     
 } 
-    .main_banner_slide{
-        background-image: url(../img/Diseney_mo.png);
-    }
+.main_banner_img_all{
+    width: 1170px;
+    height: 100vh;
+}
+.main_item{
+        /* size */
+        width: 390px;
+        height: 100vh;
+}
+
+#main_banner_01{
+    width: 390px;
+    background-image: url(../img/Diseney_mo.png);
+
+}
+
+#main_banner_02{
+    width: 390px;
+    background-image: url(../img/WineBanner_mo.png);
+
+}
+
+#main_banner_03{
+    width: 390px;
+    background-image: url(../img/B-CAST_mo.png);
+
+}
+
+.prev{
+    margin-left: 0rem;
+    padding-left: 3rem;
+    width: 30px;
+    height: 30px;
+    font-size: 2.5rem;
+    top: 830px;
+}
+.next{
+    margin-left: 0rem;
+    padding-left: 10rem;
+    width: 30px;
+    height: 30px;
+    font-size: 2.5rem;
+    top: 830px;
+}
+
     .main_ment_container{
         padding-left: 3rem;
         gap: 3rem;
@@ -94,10 +136,9 @@
         #ment_03{
             font-size: 1.4rem;
         }
-        #main_pagenation{
-            font-size: 1.rem;
-        }
 
+
+        
 /*shop-----------------------------------------*/
 .shop_container{
     width: 390px;

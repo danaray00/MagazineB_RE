@@ -22,6 +22,7 @@
             top: 0;
             width: 5760px;
             height: 100vh;
+            z-index: 1;
         }
         .main_item{
             /* layout */
@@ -45,7 +46,7 @@
             #main_banner_01{
                 position: relative;
                 float: left;
-                width: 100%;
+                width: 1920px;
                 height: 100%;
                 background-image: url(../img/Diseney.png);
                 background-repeat: no-repeat;
@@ -55,7 +56,7 @@
             #main_banner_02{
                 position: relative;
                 float: left;
-                width: 100%;
+                width: 1920px;
                 height: 100%;
                 background-image: url(../img/WineBanner.png);
                 background-repeat: no-repeat;
@@ -65,7 +66,7 @@
             #main_banner_03{
                 position: relative;
                 float: left;
-                width: 100%;
+                width: 1920px;
                 height: 100%;
                 background-image: url(../img/B-CAST.png);
                 background-repeat: no-repeat;
@@ -84,6 +85,7 @@
         justify-content: center;
         gap: 4rem;
         padding-left: 10rem;
+
     }
         #main_ment{
             position: relative;
@@ -119,54 +121,41 @@
             }
 
 
-            .slide_button {
+            .prev{
                 position: absolute;
                 left: 0px;
                 margin-left: 10rem;
                 top: 650px;
-
+                width: 40px;
+                height: 40px;
                 display: flex;
                 flex-flow: column no-wrap;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-                z-index: 999;
-              
-                /* style */
+                z-index: 999;           
                 cursor: pointer;
                 color: #fff;
+                font-size: 3rem;
               }
             
-              .slide_prev_button {
-                left: 10px;
+              .next{
+                position: absolute;
+                left: 0px;
+                margin-left: 20rem;
                 top: 650px;
-              }
-              .slide_next_button {
-                left: 100px;
-                top: 650px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                flex-flow: column no-wrap;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 999;           
+                cursor: pointer;
+                color: #fff;
+                font-size: 3rem;
+
               }
 
-              .slide_pagination {
-                /* layout */
-                display: flex;
-                gap: 5px;
-              
-                /* position */
-                position: absolute;
-                bottom: 0;
-                /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
-                left: 50%;
-                transform: translateX(-50%);
-              }
-              .slide_pagination > li {
-                /* 현재 슬라이드가 아닌 것은 투명도 부여 */
-                color: #7fb5ff88;
-                cursor: pointer;
-                font-size: 25px;
-              }
-              .slide_pagination > li.active {
-                /* 현재 슬라이드 색상은 투명도 없이 */
-                color: #7fb5ff;
-              }
 
         /*#main_slide{
             position: absolute;
@@ -181,11 +170,6 @@
             align-items: center;
             z-index: 999;
         }
-            .prev, .next{
-                position: relative;
-                width: 40px;
-                height: 40px;
-                text-align: center;
-                color: #fff;
-            }
+
         */
+
