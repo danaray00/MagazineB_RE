@@ -64,7 +64,7 @@
             /*좌측 이미지------------------------------------*/
             /*좌측 큰 이미지----------------------------------*/
                 #content_img_01{
-                    width: 67.25%;
+                    width: 67%;
                     height: 100%;
                     overflow: hidden;
                     cursor: pointer;
@@ -75,7 +75,7 @@
 
                     #content_hover{
                         position: absolute;
-                        width: 67.25%;
+                        width: 67%;
                         height: 100%;
                         left: 0;
                         top: 0;
@@ -92,6 +92,8 @@
                     #content_hover:hover{
                         opacity: 1;
                         transform: translateY(0px);
+                        width: 67%;
+                        height: 100%;
                     }
 
                         #title{
@@ -112,10 +114,11 @@
                         }
                 /*좌측 작은 이미지(1)----------------*/
                 #content_img_02{
-                    width: 32.9%;
+                    width: 33.3%;
                     height: 100%;
                     display: flex;
                     flex-flow: column wrap;
+                    justify-content: center;
                 }
                     #content_img_02_01{
                         width: 100%;
@@ -145,7 +148,6 @@
                             opacity: 1;
                             transform: translateY(0px);
                         }
-
                         #title_02{
                             position: relative;
                             clear: both;
@@ -173,7 +175,6 @@
                         clear: both;
                         cursor: pointer;
                     }
-
 
                 #content_img_02_03{
                     width: 100%;
